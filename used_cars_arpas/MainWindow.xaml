@@ -1,0 +1,33 @@
+﻿<Window x:Class="used_cars_arpas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:used_cars_arpas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ScrollViewer CanContentScroll="False">
+            <StackPanel>
+                <StackPanel>
+                    <ComboBox x:Name="combobox_make" HorizontalAlignment="Left" Margin="46,27,0,0" Width="120" Text="Make" />
+                </StackPanel>
+
+                <!--<Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>
+                <Label Height="120" Content="lasd"></Label>-->
+            </StackPanel>
+
+        </ScrollViewer>
+
+    </Grid>
+</Window>
