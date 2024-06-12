@@ -5,29 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:used_cars_arpas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
         <ScrollViewer CanContentScroll="False">
             <StackPanel>
-                <StackPanel>
-                    <ComboBox x:Name="combobox_make" HorizontalAlignment="Left" Margin="46,27,0,0" Width="120" Text="Make" />
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel.Resources>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="Margin" Value="0,0,10,0"/>
+                        </Style>
+                    </StackPanel.Resources>
+
+                    <ComboBox x:Name="combobox_make" Width="120" Text="Make" Margin="50,0,10,0"/>
+                    <ComboBox x:Name="combobox_model" Width="120" Text="Make" />
+                    <ComboBox x:Name="combobox_regdate" Width="120" Text="Make" />
                 </StackPanel>
+                <ItemsControl x:Name="cars_container" ItemsSource="{Binding Cars}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="Gray" BorderThickness="1" Margin="10" Padding="10" Width="220">
+                                <StackPanel Margin="10">
+                                    <Image Source="{Binding Img}" Height="150" Margin="5"/>
+                                    <TextBlock Text="{Binding YearNameModel}" FontWeight="Bold" FontSize="14" Margin="5"/>
+                                    <TextBlock Text="{Binding FuelType, StringFormat='Fuel Type: {0}'}" FontSize="12" Margin="5"/>
+                                    <TextBlock Text="{Binding Mileage, StringFormat='Mileage: {0:N0} km'}" FontSize="12" Margin="5"/>
+                                    <TextBlock Text="{Binding Price, StringFormat='Price: {0:C}'}" FontWeight="Bold" FontSize="14" Margin="5"/>
+                                </StackPanel>
 
-                <!--<Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>
-                <Label Height="120" Content="lasd"></Label>-->
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
             </StackPanel>
-
         </ScrollViewer>
-
     </Grid>
 </Window>

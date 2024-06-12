@@ -2,10 +2,64 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image_1.jpg" />
+    <None Remove="image_10.jpg" />
+    <None Remove="image_11.jpg" />
+    <None Remove="image_12.jpg" />
+    <None Remove="image_13.jpg" />
+    <None Remove="image_14.jpg" />
+    <None Remove="image_15.jpg" />
+    <None Remove="image_16.jpg" />
+    <None Remove="image_17.jpg" />
+    <None Remove="image_18.jpg" />
+    <None Remove="image_19.jpg" />
+    <None Remove="image_2.jpg" />
+    <None Remove="image_20.jpg" />
+    <None Remove="image_21.jpg" />
+    <None Remove="image_22.jpg" />
+    <None Remove="image_23.jpg" />
+    <None Remove="image_24.jpg" />
+    <None Remove="image_3.jpg" />
+    <None Remove="image_4.jpg" />
+    <None Remove="image_5.jpg" />
+    <None Remove="image_6.jpg" />
+    <None Remove="image_7.jpg" />
+    <None Remove="image_8.jpg" />
+    <None Remove="image_9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image_1.jpg" />
+    <Resource Include="image_10.jpg" />
+    <Resource Include="image_11.jpg" />
+    <Resource Include="image_12.jpg" />
+    <Resource Include="image_13.jpg" />
+    <Resource Include="image_14.jpg" />
+    <Resource Include="image_15.jpg" />
+    <Resource Include="image_16.jpg" />
+    <Resource Include="image_17.jpg" />
+    <Resource Include="image_18.jpg" />
+    <Resource Include="image_19.jpg" />
+    <Resource Include="image_2.jpg" />
+    <Resource Include="image_20.jpg" />
+    <Resource Include="image_21.jpg" />
+    <Resource Include="image_22.jpg" />
+    <Resource Include="image_23.jpg" />
+    <Resource Include="image_24.jpg" />
+    <Resource Include="image_3.jpg" />
+    <Resource Include="image_4.jpg" />
+    <Resource Include="image_5.jpg" />
+    <Resource Include="image_6.jpg" />
+    <Resource Include="image_7.jpg" />
+    <Resource Include="image_8.jpg" />
+    <Resource Include="image_9.jpg" />
+  </ItemGroup>
 
 </Project>
